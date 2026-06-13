@@ -33,9 +33,9 @@ Realtime chat application deployed on Amazon EKS with NGINX Ingress and TLS.
 
 # Overview
 
-Production-style cloud-native real-time chat platform demonstrating hybrid Kubernetes deployments, Infrastructure as Code, CI/CD automation, observability, and cloud-native networking.
+Full-stack real-time chat platform built using React.js, Node.js, MongoDB, and Socket.IO, enabling instant messaging, typing indicators, online presence tracking, emoji reactions, and JWT-based authentication.
 
-The project showcases deployment workflows across both Amazon EKS and lightweight k3s environments using unified GitHub Actions pipelines and Terraform-based infrastructure provisioning.
+The project demonstrates production-grade application deployment across Amazon EKS and lightweight k3s Kubernetes environments using Terraform Infrastructure as Code, GitHub Actions CI/CD automation, HTTPS/TLS networking, and Prometheus/Grafana observability.
 
 ---
 
@@ -80,7 +80,7 @@ The project showcases deployment workflows across both Amazon EKS and lightweigh
 
 # Tech Stack
 
-## Backend & Frontend
+## Application Stack
 
 - React.js
 - Node.js
