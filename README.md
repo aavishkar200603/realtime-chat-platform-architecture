@@ -2,10 +2,9 @@
 
 ## Live Demo
 
-### Active Deployment
 - https://chat.aavishkar.online
 
-### Amazon EKS Deployment
+Realtime chat platform currently deployed on a lightweight k3s Kubernetes cluster.
 
 Amazon EKS infrastructure is provisioned on-demand for deployment demonstrations, Kubernetes validation, and infrastructure testing.
 
