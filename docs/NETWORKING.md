@@ -58,6 +58,36 @@ Configured:
 
 ---
 
+---
+
+# Real-Time Communication
+
+The application uses Socket.IO for bidirectional real-time communication between clients and the backend service.
+
+Features enabled through WebSocket communication:
+
+- Real-time message delivery
+- Online/offline user status
+- Typing indicators
+- Instant UI updates
+- Low-latency event broadcasting
+
+Communication Flow:
+
+```text
+User
+   ↓
+React Frontend
+   ↓
+Socket.IO Connection
+   ↓
+Node.js Backend
+   ↓
+MongoDB
+```
+
+---
+
 # AWS Load Balancer
 
 ![AWS Load Balancer](../assets/infrastructure/aws-load-balancer.png)
