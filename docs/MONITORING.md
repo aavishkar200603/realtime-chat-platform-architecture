@@ -8,6 +8,18 @@ This project integrates Prometheus and Grafana for Kubernetes observability and 
 
 ---
 
+# Monitoring Features
+
+- Prometheus-based metrics collection
+- Kubernetes pod monitoring
+- Application metrics scraping
+- Real-time observability dashboards
+- Resource utilization tracking
+- Health monitoring and target validation
+- Grafana visualization dashboards
+
+---
+
 # Monitoring Architecture
 
 ![Monitoring Architecture](../assets/architecture/monitoring-architecture.svg)
@@ -43,6 +55,22 @@ Grafana dashboards visualize:
 - Pod resource utilization
 - Application health
 - Real-time monitoring insights
+
+---
+
+# Metrics Collected
+
+The monitoring stack collects metrics from Kubernetes workloads and application services including:
+
+- Pod health and availability
+- Kubernetes deployment status
+- Frontend and backend pod metrics
+- Node.js application metrics
+- Active requests
+- Active handles
+- Active resources
+- Prometheus scrape target health
+- Infrastructure and application observability metrics
 
 ---
 
