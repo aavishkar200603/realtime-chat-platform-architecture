@@ -58,8 +58,6 @@ Configured:
 
 ---
 
----
-
 # Real-Time Communication
 
 The application uses Socket.IO for bidirectional real-time communication between clients and the backend service.
