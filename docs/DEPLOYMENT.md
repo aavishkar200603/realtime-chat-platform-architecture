@@ -1,10 +1,25 @@
 # Deployment Documentation
 
+This document describes the CI/CD pipelines, container build workflows, registry integrations, and Kubernetes deployment automation used for the Real-Time Chat Platform.
+
 ---
 
 # CI/CD Overview
 
-This project uses GitHub Actions-based multi-repository CI/CD pipelines integrated with Docker, Kubernetes, Terraform, and cloud-native deployment workflows.
+This project uses GitHub Actions-based multi-repository CI/CD pipelines to automate container builds, image publishing, infrastructure deployments, and Kubernetes application rollouts across both Amazon EKS and k3s environments.
+
+---
+
+# Deployment Features
+
+- Automated Docker image builds
+- AWS ECR and DockerHub integration
+- Multi-repository GitHub Actions workflows
+- Kubernetes rolling deployments
+- Environment-aware deployment pipelines
+- Infrastructure repository dispatch automation
+- Amazon EKS deployment support
+- Lightweight k3s deployment support
 
 ---
 
@@ -81,17 +96,26 @@ The infrastructure deployment pipelines automate:
 # Deployment Workflow
 
 ```text
-Developer Push
-      ↓
-GitHub Actions
-      ↓
-Docker Build
-      ↓
-Push to Registry
-      ↓
-Trigger Infra Repository
-      ↓
-kubectl Deployment Update
-      ↓
-Kubernetes Cluster
+Developer
+    │
+    ▼
+GitHub Repository
+    │
+    ▼
+GitHub Actions CI/CD
+    │
+    ▼
+Docker Image Build
+    │
+    ▼
+AWS ECR / DockerHub
+    │
+    ▼
+Infrastructure Repository Dispatch
+    │
+    ▼
+Kubernetes Deployment Update
+    │
+    ▼
+Amazon EKS / k3s Cluster
 ```
