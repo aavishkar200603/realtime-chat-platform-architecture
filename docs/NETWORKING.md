@@ -54,7 +54,7 @@ Configured:
 
 # Kubernetes Networking Validation
 
-![Kubernetes Networking](../assets/networking/kubernetes-networking.png)
+![Kubernetes Networking](../assets/networking/eks-cluster-validation.png)
 
 ---
 
