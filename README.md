@@ -1,4 +1,4 @@
-# Production-Grade Real-Time Chat Platform Architecture
+# Production-Grade Real-Time Chat Platform
 
 ## Live Demo
 
