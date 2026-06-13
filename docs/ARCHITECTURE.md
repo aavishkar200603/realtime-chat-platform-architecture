@@ -4,10 +4,41 @@
 
 # Overview
 
-This project demonstrates a production-style cloud-native real-time chat platform deployed across both Amazon EKS and lightweight k3s Kubernetes environments.
+This project is a production-grade real-time chat platform built using React.js, Node.js, MongoDB, and Socket.IO.
 
-The architecture showcases Infrastructure as Code, hybrid Kubernetes deployment workflows, GitHub Actions CI/CD automation, observability, ingress-based traffic routing, and production-style networking.
+The application supports real-time messaging, JWT-based authentication, online presence tracking, typing indicators, emoji reactions, and persistent chat history.
 
+The platform is deployed across Amazon EKS and lightweight k3s Kubernetes environments using Terraform Infrastructure as Code, GitHub Actions CI/CD pipelines, NGINX Ingress networking, and Prometheus/Grafana observability.
+
+---
+
+# Application Architecture
+
+```text
+┌─────────────┐
+│    User     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│ React Front │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────────────┐
+│ REST APIs + SocketIO│
+└──────┬──────────────┘
+       │
+       ▼
+┌─────────────────────┐
+│ Node.js / Express   │
+└──────┬──────────────┘
+       │
+       ▼
+┌─────────────┐
+│   MongoDB   │
+└─────────────┘
+```
 ---
 
 # Hybrid Kubernetes Architecture
